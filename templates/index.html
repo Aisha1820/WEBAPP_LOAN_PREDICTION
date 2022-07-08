@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LOAN ELIGIBILITY</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <!-- <div class="box"> -->
+    <h1> 💸 THE LOAN ELIGIBILITY 💸 </h1>
+    <!-- </div> -->
+
+    <!-- <div class="box"> -->
+    <center>
+    <form action="/predict" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="Gender">Gender</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="Boolean" id="Gender" name="Gender" placeholder="Enter Gender" min=0 />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Married">Married</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="Text" id="Married" name="Married" placeholder="Enter Married" min="0" />
+                </td>
+        </tr>
+          <tr>
+                <td>
+                    <label for="Education">Education</label>
+                </td>
+                 <td>:</td>
+                <td>
+                    <input type="Text" id="Education" name="Education" placeholder="Enter Education" min=0 />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Self_Employed">Self_Employed</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="Text" id="Self_Employed" name="Self_Employed" placeholder="Enter Self_Employed" min=0 />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Property Area">Property Area</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="Text" id="Property Area" name="Property Area" placeholder="Enter Property Area" min=0 />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Loan Status">Loan Status</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="Text" id="Loan Status" name="Loan Status" placeholder="Enter Loan Status" min=0 />
+                </td>
+            </tr>
+
+        <tr>
+            <td colspan="3">
+                <input id="btn" type="submit" value="Predict" >
+            </td>
+        </tr>
+        </table>
+        <p class="pred" id="pred">Prediction : {{pred}} </p>
+    </form>
+    </center>
+<!-- </div> -->
+</body>
+</html>
